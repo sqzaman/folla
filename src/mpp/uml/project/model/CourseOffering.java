@@ -26,8 +26,8 @@ public class CourseOffering {
 	public ArrayList<Session> getSessions() {
 		return sessions;
 	}
-	public void setSessions(ArrayList<Session> sessions) {
-		this.sessions = sessions;
+	public void addSession(Session session) {
+		this.sessions.add(session);
 	}
 	public Course getCourse() {
 		return course;
@@ -44,8 +44,8 @@ public class CourseOffering {
 	public ArrayList<AcademicBlock> getAcademicBlocks() {
 		return academicBlocks;
 	}
-	public void setAcademicBlocks(ArrayList<AcademicBlock> academicBlocks) {
-		this.academicBlocks = academicBlocks;
+	public void setAcademicBlocks(AcademicBlock academicBlock) {
+		this.academicBlocks.add(academicBlock);
 	}
 	public Faculty getFaculty() {
 		return faculty;

@@ -7,6 +7,10 @@ public class Location {
 	private String description;
 	private ArrayList<CourseOffering> courseOfferings;
 	
+	public Location() {
+		
+	}
+	
 	public String getId() {
 		return id;
 	}
@@ -22,8 +26,8 @@ public class Location {
 	public ArrayList<CourseOffering> getCourseOfferings() {
 		return courseOfferings;
 	}
-	public void setCourseOfferings(ArrayList<CourseOffering> courseOfferings) {
-		this.courseOfferings = courseOfferings;
+	public void addCourseOffering(CourseOffering courseOffering) {
+		this.courseOfferings.add(courseOffering);
 	}
 	
 	
