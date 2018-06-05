@@ -2,8 +2,11 @@ package mpp.uml.project.model;
 
 public class Faculty {
 	private String name;
-	private CourseOffering courseOffering;
+	private CourseOffering courseOffering;	
 	
+	public Faculty(String facultyName) {
+		name = facultyName;
+	}
 	public String getName() {
 		return name;
 	}

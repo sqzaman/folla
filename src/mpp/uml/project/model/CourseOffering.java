@@ -1,6 +1,7 @@
 package mpp.uml.project.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CourseOffering {
 	private String id;
@@ -8,9 +9,14 @@ public class CourseOffering {
 	private ArrayList<Session> sessions;
 	private Course course;
 	private PlanOfStudy planOfStudy;
-	private ArrayList<AcademicBlock> academicBlocks;
+	private List<AcademicBlock> academicBlocks;
 	private Faculty faculty;
 	
+	
+	
+	public CourseOffering() {
+		academicBlocks = new ArrayList<>();
+	}
 	public String getId() {
 		return id;
 	}
@@ -41,10 +47,10 @@ public class CourseOffering {
 	public void setPlanOfStudy(PlanOfStudy planOfStudy) {
 		this.planOfStudy = planOfStudy;
 	}
-	public ArrayList<AcademicBlock> getAcademicBlocks() {
+	public List<AcademicBlock> getAcademicBlocks() {
 		return academicBlocks;
 	}
-	public void setAcademicBlocks(AcademicBlock academicBlock) {
+	public void addAcademicBlock(AcademicBlock academicBlock) {
 		this.academicBlocks.add(academicBlock);
 	}
 	public Faculty getFaculty() {

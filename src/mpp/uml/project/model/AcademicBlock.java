@@ -7,9 +7,9 @@ public class AcademicBlock {
 	String name;
 	Date startDate;
 	Date endDate;
-	Semister semister;
+	Semester semister;
 	
-	public AcademicBlock(int blockId, String blockName, Date blockStartDate, Date blockEndDate, Semister blockSemister) {
+	public AcademicBlock(int blockId, String blockName, Date blockStartDate, Date blockEndDate, Semester blockSemister) {
 		id = blockId;
 		name = blockName;
 		startDate = blockStartDate;
@@ -42,11 +42,11 @@ public class AcademicBlock {
 		this.endDate = endDate;
 	}
 
-	public Semister getSemister() {
+	public Semester getSemister() {
 		return semister;
 	}
 
-	public void setSemister(Semister semister) {
+	public void setSemister(Semester semister) {
 		this.semister = semister;
 	}
 	
