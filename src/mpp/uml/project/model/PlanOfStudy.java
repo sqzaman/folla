@@ -1,19 +1,20 @@
 package mpp.uml.project.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PlanOfStudy {
-	private ArrayList<CourseOffering> courseOfferings;
+	private List<CourseOffering> courseOfferings;
 	private Student student;
 	
-	public PlanOfStudy() {
-		
-	}
 	
-	public ArrayList<CourseOffering> getCourseOfferings() {
+	public PlanOfStudy() {
+		courseOfferings = new ArrayList<>();
+	}
+	public List<CourseOffering> getCourseOfferings() {
 		return courseOfferings;
 	}
-	public void addCourseOffering(CourseOffering courseOffering) {
+	public void adCourseOffering(CourseOffering courseOffering) {
 		this.courseOfferings.add(courseOffering);
 	}
 	public Student getStudent() {
