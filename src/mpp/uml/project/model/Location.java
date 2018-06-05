@@ -1,20 +1,23 @@
 package mpp.uml.project.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Location {
-	private String id;
+	private int id;
 	private String description;
-	private ArrayList<CourseOffering> courseOfferings;
+	private List<CourseOffering> courseOfferings;
 	
-	public Location() {
-		
+	public Location(int locId, String des) {
+		id = locId;
+		description = des;
+		courseOfferings = new ArrayList<>();
 	}
 	
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getDescription() {
@@ -23,7 +26,7 @@ public class Location {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public ArrayList<CourseOffering> getCourseOfferings() {
+	public List<CourseOffering> getCourseOfferings() {
 		return courseOfferings;
 	}
 	public void addCourseOffering(CourseOffering courseOffering) {

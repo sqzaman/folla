@@ -2,7 +2,12 @@ package mpp.uml.project.model;
 
 public class Barcode {
 	int id;
-	String barcode;
+	String barcode;	
+	
+	public Barcode(int barcodeId, String barcode) {
+		id = barcodeId;
+		this.barcode = barcode;
+	}
 	public int getId() {
 		return id;
 	}

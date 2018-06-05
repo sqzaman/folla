@@ -5,6 +5,13 @@ public class Course {
 	int id;
 	String name;
 	String description;
+		
+	public Course(int courseId, String courseName, String courseDescription) {
+		id = courseId;
+		name = courseName;
+		description = courseDescription;
+	}
+	
 	public int getId() {
 		return id;
 	}
